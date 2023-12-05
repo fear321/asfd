@@ -20,35 +20,26 @@ body {
 /* Özelleştirilmiş Input */
 .custom-input {
     width: 70%;
-    padding: 10px;
+    padding: 10px 10px 10px 40px; /* Padding left increased for the icon */
     font-size: 18px;
     border: none;
     left: 50%;
     top: 20%;
     transform: translate(-50%, -50%);
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
     outline: none;
     transition: border-color 0.3s ease;
     position: absolute;
-    background: transparent;
-}
-
-.custom-input::before {
-    content: url('link_to_google_logo.png'); /* Google logosunun linki */
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
+    background: url('https://www.google.com/favicon.ico') no-repeat 10px center; /* Background image */
+    background-size: 20px 20px; /* Background size */
+    color: #c7b7b7;
 }
 
 .custom-input:focus,
 .custom-input:hover {
-    border-color: blue;
+    border-color: #6c6385;
     transition: border-color 0.3s ease;
 }
-/* 
 
 /* Giriş Bölümü */
 .intro {
@@ -60,7 +51,6 @@ body {
     color: #fff;
     padding: 0 20px;
 }
-/* Giriş Bölümü Bitiş */
 
 /* Video Konumlandırma */
 .video-container {
@@ -89,4 +79,3 @@ body {
         transform: translate(0, -50%);
     }
 }
-/* Video Konumlandırma Bitiş */
